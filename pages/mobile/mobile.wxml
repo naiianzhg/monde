@@ -1,0 +1,22 @@
+<!--pages/mobile/mobile.wxml-->
+<view class="content">
+  <view class="pageTitle">验证手机号</view>
+
+  <view class="account">
+    <view class="title">+86</view>
+    <view class="input">
+      <input bindinput="accountInput" placeholder="请输入手机号" placeholder-style="color:#cccccc;" style="width:120%" />
+    </view>
+  </view>
+
+  <view class="account">
+    <view class="title">验证码</view>
+    <view class="input">
+      <input bindinput="accountInput" placeholder="请输入手机验证码" placeholder-style="color:#cccccc;" style="width:120%" />
+    </view>
+    <button class="get" style="height:50rpx;">获取验证码</button>
+  </view>
+
+  <button class="btn" disable="{{disable}}" type="{{btnState}}" bindtap="valid">下一步</button>
+
+</view>

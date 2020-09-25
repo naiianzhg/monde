@@ -1,0 +1,92 @@
+/* pages/account/account.wxss */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.pageTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50rpx;
+}
+
+.page_title {
+  color: #0055a4;
+  font-size: 45rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.div {
+  background-color: #ef4135;
+  height: 4rpx;
+  width: 30%;
+}
+
+.account {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  padding: 20rpx;
+  width: 90%;
+  border-radius: 20rpx;
+  background-color: #eee;
+}
+
+.title {
+  margin-right: 15rpx;
+  font-weight: bold;
+  font-size: 40rpx;
+}
+
+.blank {
+  height: 30rpx;
+}
+
+.see {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  right: 30rpx;
+}
+
+.btn {
+  width: 60%;
+  margin-top: 50rpx;
+  color: #000;
+  font-weight: bold;
+}
+
+.operate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 60rpx;
+  font-size: 30rpx;
+  color: #000;
+}
+
+.login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 60rpx;
+}
+
+.logintext {
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.input {
+  font-size: 30rpx;
+}
+
+.navigator-hover {
+  color: #ef4135;
+}

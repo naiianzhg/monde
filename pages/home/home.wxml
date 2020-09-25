@@ -1,0 +1,63 @@
+<!--pages/home/home.wxml-->
+<view class="content">
+
+  <view class="poster-swiper">
+    <swiper style="height:480rpx;" indicator-dots="true" indicator-color="#cccccc" indicator-active-color="#0055A4" autoplay="true" circular="true" interval="2500" duration="1000">
+      <block wx:for="{{background}}" wx:key>
+        <swiper-item>
+          <image src="{{item}}" mode="aspectFill" style="width:100%;height:480rpx;" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="scroll">
+    <scroll-view scroll-x="true" style="height:150rpx;width:100%;">
+      <view class="catagories">
+        <view class="cat1" style="height:150rpx;width:150rpx;" hover-class="hover" hover-stay-time="80">
+          <image src="../../images/cat_a.png" style="height:100rpx;width:100rpx;"></image>
+          <view>A</view>
+        </view>
+        <view class="cat" style="height:150rpx;width:150rpx;" hover-class="hover" hover-stay-time="80">
+          <image src="../../images/cat_b.png" style="height:100rpx;width:100rpx;"></image>
+          <view>B</view>
+        </view>
+        <view class="cat" style="height:150rpx;width:150rpx;" hover-class="hover" hover-stay-time="80">
+          <image src="../../images/cat_c.png" style="height:100rpx;width:100rpx;"></image>
+          <view>C</view>
+        </view>
+        <view class="cat" style="height:150rpx;width:150rpx;" hover-class="hover" hover-stay-time="80">
+          <image src="../../images/cat_d.png" style="height:100rpx;width:100rpx;"></image>
+          <view>D</view>
+        </view>
+        <view class="cat" style="height:150rpx;width:150rpx;" hover-class="hover" hover-stay-time="80">
+          <image src="../../images/cat_e.png" style="height:100rpx;width:100rpx;"></image>
+          <view>E</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="blank"></view>
+
+  <view class="itemTitle">
+    <view class="item_title">Hots</view>
+    <view class="div"></view>
+  </view>
+  <view class="item_list">
+    <block wx:for="{{array}}" wx:key>
+      <view class="item" bindtap="seeDetail" hover-class="hover" hover-stay-time="80" id="0">
+        <view>
+          <image src="{{item.img}}" mode="aspectFill" style="width:100rpx;height:100rpx;"></image>
+        </view>
+        <view class="info">
+          <view class="title">{{item.title}}</view>
+          <view class="count">
+            <view>{{item.author}}</view>
+            <view class="watched">{{item.watched}}</view>
+            <view class="comment">{{item.comment}}</view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

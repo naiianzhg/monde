@@ -1,0 +1,57 @@
+<!--pages/account/account.wxml-->
+<view class="content">
+  <view class="pageTitle">
+    <view class="page_title">登录</view>
+    <view class="div"></view>
+  </view>
+
+  <view class="account">
+    <view class="title">账号</view>
+    <view class="input">
+      <input bindinput="accountInput" placeholder="请输入手机号/邮箱/用户名" placeholder-style="color:#cccccc;" style="width:120%" />
+    </view>
+  </view>
+
+  <view class="blank"></view>
+
+  <view class="account">
+    <view class="title">密码</view>
+    <view class="input">
+      <input bindinput="pwdInput" placeholder="请输入密码" type="{{show}}" placeholder-style="color:#cccccc;" maxlength="18" style="width:120%" />
+    </view>
+    <view class="see">
+      <image src="{{isShow?'../../images/see.png':'../../images/nosee.png'}}" bindtap="showpwd" style="height:50rpx;width:50rpx;"></image>
+    </view>
+  </view>
+
+  <view class="blank"></view>
+
+  <button class="btn" disabled="{{disable}}" type="{{btnState}}" bindtap="login">登录</button>
+
+  <view class="login">
+    <navigator url="../index/index">
+      <view>
+        <image src="../../images/wxlogin.png" style="width:150rpx;height:150rpx;"></image>
+        <view class="logintext">微信登陆</view>
+      </view>
+    </navigator>
+    <navigator url="../index/index">
+    <view>
+      <image src="../../images/qqlogin.png" style="width:150rpx;height:150rpx;"></image>
+      <view class="logintext">QQ登陆</view>
+    </view>
+    </navigator>
+  </view>
+
+  <view class="operate">
+    <view>
+      <navigator url="../mobile/mobile" hover-class="navigator-hover">手机快速注册</navigator>
+    </view>
+    <view>
+      <navigator url="../company/company" hover-class="navigator-hover">企业快速注册</navigator>
+    </view>
+    <view>
+      <navigator url="../forget/forget" hover-class="navigator-hover">忘记密码</navigator>
+    </view>
+  </view>
+</view>

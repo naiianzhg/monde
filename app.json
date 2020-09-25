@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/traduction/traduction",
+    "pages/history/history",
+    "pages/change/change",
+    "pages/home/home",
+    "pages/read/read",
+    "pages/account/account",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/company/company",
+    "pages/mobile/mobile",
+    "pages/forget/forget"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#eeeeee",
+    "navigationBarBackgroundColor": "#0055A4",
+    "navigationBarTitleText": "Monde",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#eeeeee",
+    "backgroundColor": "#EF4135",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/homefill.png",
+        "text": "ACCUEIL"
+      },
+      {
+        "pagePath": "pages/traduction/traduction",
+        "iconPath": "images/translate.png",
+        "selectedIconPath": "images/translatefill.png",
+        "text": "TRADUCTION"
+      },
+      {
+        "pagePath": "pages/read/read",
+        "iconPath": "images/form.png",
+        "selectedIconPath": "images/formfill.png",
+        "text": "LIVRE"
+      },
+      {
+        "pagePath": "pages/account/account",
+        "iconPath": "images/account.png",
+        "selectedIconPath": "images/accountfill.png",
+        "text": "MON"
+      }
+    ]
+  }
+}
